@@ -4,9 +4,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
-    <!-- Default radius of the software rounded corners. -->
-    <dimen name="rounded_corner_radius">50.0px</dimen>
-
     <!-- The default height of the status bar used in {@link SystemBarUtils#getStatusBarHeight} to
          calculate the status bar height. -->
     <dimen name="status_bar_height_default">74px</dimen>
@@ -15,4 +12,12 @@
          Do not read this dimen directly.
          Use {@link SystemBarUtils#getStatusBarHeight} instead. -->
     <dimen name="status_bar_height_portrait">74px</dimen>
+
+    <!-- Radius of the software rounded corners at the top of the display in its natural
+        orientation. If zero, the value of rounded_corner_radius is used. -->
+    <dimen name="rounded_corner_radius_top">73px</dimen>
+
+    <!-- Radius of the software rounded corners at the bottom of the display in its natural
+        orientation. If zero, the value of rounded_corner_radius is used. -->
+    <dimen name="rounded_corner_radius_bottom">73px</dimen>
 </resources>
