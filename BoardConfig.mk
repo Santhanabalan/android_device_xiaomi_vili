@@ -15,6 +15,10 @@ include device/xiaomi/sm8350-common/BoardConfigCommon.mk
 # Board
 TARGET_BOOTLOADER_BOARD_NAME := vili
 
+# Camera
+MALLOC_SVELTE_FOR_LIBC32 := true
+MALLOC_SVELTE := true
+
 # Firmware
 -include vendor/xiaomi/vili-firmware/BoardConfigVendor.mk
 
