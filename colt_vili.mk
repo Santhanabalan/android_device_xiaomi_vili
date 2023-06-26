@@ -11,8 +11,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from vili device
 $(call inherit-product, device/xiaomi/vili/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common ColtOS stuff.
+$(call inherit-product, vendor/colt/config/common_full_phone.mk)
+COLT_BUILD_TYPE := UNOFFICIAL
+COLT_BUILD_MAINTAINER := Santhanabalan
+WITH_GAPPS := true
+TARGET_INCLUDE_NGA := true
 
 # Boot Animation
 TARGET_BOOT_ANIMATION_RES := 1440
@@ -21,7 +25,7 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := vili
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 2107113SG
-PRODUCT_NAME := lineage_vili
+PRODUCT_NAME := colt_vili
 
 # MIUI stuff
 TARGET_SHIPS_GALLERY=true
