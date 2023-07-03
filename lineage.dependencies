@@ -13,4 +13,10 @@
     "target_path": "vendor/xiaomi"
     "remote": "gitlab"
   }
+  {
+    "remote": "gitlab",
+    "repository": "Santhanabalan/vendor_xiaomi_vili-miuicamera",
+    "target_path": "vendor/xiaomi/miuicamera",
+    "branch": "thirteen-leica"
+  }
 ]

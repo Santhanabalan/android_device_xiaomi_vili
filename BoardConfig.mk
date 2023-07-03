@@ -19,6 +19,9 @@ TARGET_BOOTLOADER_BOARD_NAME := vili
 MALLOC_SVELTE_FOR_LIBC32 := true
 MALLOC_SVELTE := true
 
+# MIUI camera stuff
+-include vendor/xiaomi/vili-miuicamera/products/board.mk
+
 # Firmware
 -include vendor/xiaomi/vili-firmware/BoardConfigVendor.mk
 

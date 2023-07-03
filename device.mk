@@ -21,6 +21,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.xiaomi.camera.rc
 
+# MiuiCamera
+$(call inherit-product-if-exists, vendor/xiaomi/vili-miuicamera/products/miuicamera.mk)
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
