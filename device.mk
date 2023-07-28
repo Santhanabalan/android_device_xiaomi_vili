@@ -11,10 +11,6 @@ $(call inherit-product, device/xiaomi/sm8350-common/common.mk)
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/audio/,$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_lahaina)
 
-# Init
-PRODUCT_PACKAGES += \
-    init.xiaomi.camera.rc
-
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/xiaomi/vili-miuicamera/products/miuicamera.mk)
 
