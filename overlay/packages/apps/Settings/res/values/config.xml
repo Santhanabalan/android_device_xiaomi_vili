@@ -40,4 +40,8 @@
     <!-- Fingerprint -->
     <dimen name="fingerprint_dot_radius">0dp</dimen>
     <dimen name="fingerprint_pulse_radius">0dp</dimen>
+
+    <!-- About Device - Maintainer -->
+    <string name="build_maintainer_summary">Santhanabalan</string>
+    <string name="build_maintainer_telegram">https://t.me/Exodus_III</string>
 </resources>
