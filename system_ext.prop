@@ -12,3 +12,4 @@ telephony.active_modems.max_count=2
 # WFD
 persist.debug.wfd.enable=1
 vendor.wfdservice64=enable
+persist.sys.wfd.virtual=0
