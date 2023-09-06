@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_vili.mk
+    $(LOCAL_DIR)/superior_vili.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_vili-user \
-    aosp_vili-userdebug \
-    aosp_vili-eng
+    superior_vili-user \
+    superior_vili-userdebug \
+    superior_vili-eng
