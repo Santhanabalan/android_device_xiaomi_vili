@@ -6,4 +6,10 @@
 <resources>
     <!-- Device specific doze package -->
     <string name="config_customDozePackage" translatable="false">org.pixelexperience.settings/org.pixelexperience.settings.doze.DozeSettingsActivity</string>
+
+    <!-- Whether to enable Lineage Fast Charge Preference -->
+    <bool name="config_lineageFastChargeSupported">true</bool>
+
+    <!-- Whether to enable Lineage Health Service -->
+    <bool name="config_lineageHealthSupported">true</bool>
 </resources>
