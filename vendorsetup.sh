@@ -2,7 +2,7 @@ echo 'Starting to clone stuffs needed to build for Vili'
 
 # Device common
 echo 'Cloning common device tree'
-git clone https://github.com/Santhanabalan/android_device_xiaomi_sm8350-common -b lineage-21 device/xiaomi/sm8350-common
+git clone https://github.com/Santhanabalan/android_device_xiaomi_sm8350-common -b crdroid-14 device/xiaomi/sm8350-common
 
 # Kernel
 # Recursively clone KernelSU also
@@ -16,6 +16,10 @@ git clone https://github.com/Santhanabalan/android_vendor_xiaomi_vili -b udc ven
 # Vendor common
 echo 'Cloning common vendor tree'
 git clone https://github.com/Santhanabalan/android_vendor_xiaomi_sm8350-common -b udc vendor/xiaomi/sm8350-common
+
+# Xiaomi
+echo 'Cloning hardware xiaomi'
+rm -rf hardware/xiaomi && git clone --depth=1 https://github.com/LineageOS/android_hardware_xiaomi -b lineage-21 hardware/xiaomi
 
 # Firmware
 echo 'Cloning firmware'
@@ -60,18 +64,6 @@ patch -p1 <0001-SettingsProvider-Resolve-google-gms-configurator-denials.patch
 patch -p1 <0002-Remove-read-device-config-checks.patch
 cd ../..
 
-# Dolby
-echo 'Adding Dolby patch'
-cd frameworks/av
-wget https://raw.githubusercontent.com/Santhanabalan/Patch-Vili/udc-14/Dolby/0001-Add-support-for-loading-prebuilt-ddp-and-ac4-decoder-lib.patch
-wget https://raw.githubusercontent.com/Santhanabalan/Patch-Vili/udc-14/Dolby/0002-OMX-Remove-support-for-prebuilt-ac4-decoder.patch
-wget https://raw.githubusercontent.com/Santhanabalan/Patch-Vili/udc-14/Dolby/0003-media-OMXStore-Import-loading-libstagefrightdolby.patch
-wget https://raw.githubusercontent.com/Santhanabalan/Patch-Vili/udc-14/Dolby/0004-Import-Dolby-Effects-initialization.patch
-patch -p1 <0001-Add-support-for-loading-prebuilt-ddp-and-ac4-decoder-lib.patch
-patch -p1 <0002-OMX-Remove-support-for-prebuilt-ac4-decoder.patch
-patch -p1 <0003-media-OMXStore-Import-loading-libstagefrightdolby.patch
-patch -p1 <0004-Import-Dolby-Effects-initialization.patch
-cd ../..
 
 # Optimization
 echo 'Adding optimization patch'
