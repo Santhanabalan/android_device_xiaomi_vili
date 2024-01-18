@@ -44,3 +44,6 @@ include vendor/xiaomi/vili/BoardConfigVendor.mk
 
 # Firmware
 include vendor/xiaomi/vili-firmware/BoardConfigVendor.mk
+
+# Inherit from proprietary files for Leica Camera
+-include vendor/xiaomi/vili-miuicamera/products/board.mk

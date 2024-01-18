@@ -39,3 +39,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/vili/vili-vendor.mk)
+
+# Call the Leica Camera setup
+$(call inherit-product-if-exists, vendor/xiaomi/vili-miuicamera/products/miuicamera.mk)
