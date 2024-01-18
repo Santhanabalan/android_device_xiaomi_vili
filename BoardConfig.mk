@@ -41,3 +41,6 @@ SOONG_CONFIG_xiaomiSm8350Vars_vibrator_use_effect_stream := true
 
 # Include proprietary files
 include vendor/xiaomi/vili/BoardConfigVendor.mk
+
+# Firmware
+include vendor/xiaomi/vili-firmware/BoardConfigVendor.mk
