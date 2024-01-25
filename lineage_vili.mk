@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2021 The LineageOS Project
+# Copyright (C) 2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -24,10 +24,10 @@ PRODUCT_SYSTEM_NAME := vili_global
 PRODUCT_SYSTEM_DEVICE := vili
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="vili_global-user 13 RKQ1.211001.001 V14.0.4.0.TKDMIXM release-keys" \
+    PRIVATE_BUILD_DESC="vili-user 13 RKQ1.211001.001 V14.0.14.0.TKDEUXM release-keys" \
     TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
-BUILD_FINGERPRINT := Xiaomi/vili_global/vili:13/RKQ1.211001.001/V14.0.4.0.TKDMIXM:user/release-keys
+BUILD_FINGERPRINT := Xiaomi/vili/vili:13/RKQ1.211001.001/V14.0.14.0.TKDEUXM:user/release-keys
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
