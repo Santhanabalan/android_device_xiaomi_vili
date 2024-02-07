@@ -2,7 +2,7 @@ echo 'Starting to clone stuffs needed to build for Vili'
 
 # Device common
 echo 'Cloning common device tree'
-git clone https://github.com/Santhanabalan/android_device_xiaomi_sm8350-common -b lineage-21 device/xiaomi/sm8350-common
+git clone https://github.com/Santhanabalan/android_device_xiaomi_sm8350-common -b pe-14 device/xiaomi/sm8350-common
 
 # Kernel
 # Recursively clone KernelSU also
