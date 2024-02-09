@@ -1,1 +1,1 @@
-require board=haydn|haydnin
+require board=vili

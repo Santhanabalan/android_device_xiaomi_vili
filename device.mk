@@ -22,9 +22,14 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
 
+# Overlays-RRO
+PRODUCT_PACKAGES += \
+    ViliSettingsProviderOverlay \
+    ViliWifiOverlay
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
 # Call the proprietary setup
-$(call inherit-product, vendor/xiaomi/haydn/haydn-vendor.mk)
+$(call inherit-product, vendor/xiaomi/vili/vili-vendor.mk)
